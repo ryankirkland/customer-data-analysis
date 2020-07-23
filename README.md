@@ -31,7 +31,7 @@ The following charts break out the return reasons across all return and replacem
 
 <div align='center'>
     <img src="https://github.com/ryankirkland/customer-data-analysis/blob/master/images/defect-vs-quality.png" width=45% />
-    <img src="https://github.com/ryankirkland/customer-data-analysis/blob/master/images/return-reason.png" width=45% />
+    <img src="https://github.com/ryankirkland/customer-data-analysis/blob/master/images/return-reasons.png" width=45% />
 </div>
 
 ## Hypothesis Testing: Frequentist Approach
