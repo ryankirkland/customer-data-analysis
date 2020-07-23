@@ -20,8 +20,8 @@ The data analyzed is from the 1257 orders since going live on Amazon in January,
 </div>
 
 <div align='center'>
-    <img src="https://github.com/ryankirkland/customer-data-analysis/blob/master/images/defect-vs-quality.png" width=45% />
-    <img src="https://github.com/ryankirkland/customer-data-analysis/blob/master/images/return-reason.png" width=45% />
+    <img src="https://github.com/ryankirkland/customer-data-analysis/blob/master/images/Screen%20Shot%202020-07-23%20at%202.56.37%20PM.png" width=45% />
+    <img src="https://github.com/ryankirkland/customer-data-analysis/blob/master/images/state-heatmap.png" width=45% />
 </div>
 
 ## Hypothesis Testing: Frequentist Approach
