@@ -14,13 +14,20 @@ The data analyzed is from the 1257 orders since going live on Amazon in January,
 
 ## EDA
 
+- Clean product purchase date data and convert to two columns - one for time of day and one for standard date. The first visualization represents the frequency of purchase during each hour of the day, where the stated hour "9 AM" contains orders placed between 9:00 and 9:59:59:
+
+<img src="https://github.com/ryankirkland/customer-data-analysis/blob/master/images/Screen%20Shot%202020-07-23%20at%202.56.37%20PM.png" width=100% />
+
+- This second visualazation shows number of orders placed by day:
+
+<img src="https://github.com/ryankirkland/customer-data-analysis/blob/master/images/state-heatmap.png" width=100% />
+
+The following charts break out the return reasons across all return and replacement request, then a visualization of the total shipped product that was marked as defective by customers compared to those that shipped in expected working condition, but may have been returned for reasons outside of defect:
+
 <div align='center'>
     <img src="https://github.com/ryankirkland/customer-data-analysis/blob/master/images/defect-vs-quality.png" width=45% />
     <img src="https://github.com/ryankirkland/customer-data-analysis/blob/master/images/return-reason.png" width=45% />
 </div>
-
-<img src="https://github.com/ryankirkland/customer-data-analysis/blob/master/images/Screen%20Shot%202020-07-23%20at%202.56.37%20PM.png" width=100% />
-<img src="https://github.com/ryankirkland/customer-data-analysis/blob/master/images/state-heatmap.png" width=100% />
 
 ## Hypothesis Testing: Frequentist Approach
 
