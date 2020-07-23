@@ -1,6 +1,6 @@
-## YTD Order Analysis for Rechargeable Battery Company
+# YTD Order Analysis for Rechargeable Battery Company
 
-### Overview
+## Overview
 
 The following is an investigation into customer order data from a recently launched rechargeable battery brand's Amazon Seller Central account. In addition to EDA to uncover trends in purchase behavior, the goal of this analysis is determine whether or not the current rate of products being returned as defective warrants an investigation into the current manufacturer.
 
@@ -8,15 +8,15 @@ The following is an investigation into customer order data from a recently launc
 
 Pandas, Numpy, SciPy, Matplotlib, Plotly, Seaborn, 
 
-### The Data
+## The Data
 
 The data analyzed is from the 1257 orders since going live on Amazon in January, in addition to exports from Seller Central detailing returns and requests for replacement.
 
-### EDA
+## EDA
 
 
 
-### Hypothesis Testing: Frequentist Approach
+## Hypothesis Testing: Frequentist Approach
 
 #### One-Tailed Hypothesis Test to Determine with 95% Confidence Battery Company Does Not Need to Investigate Manufacturer
 
@@ -27,7 +27,7 @@ The data analyzed is from the 1257 orders since going live on Amazon in January,
  
  <img src="https://github.com/ryankirkland/customer-data-analysis/blob/master/images/binomial.png"/>
 
-### Hypothesis Test: Bayesian Approach
+## Hypothesis Test: Bayesian Approach
 
 #### Beta Distribution for determining the probability that 5% or more units will be defective in future shipments
 
@@ -41,6 +41,6 @@ I want to build a probability distribution for the value of p, which is the prop
 
 <img src="https://github.com/ryankirkland/customer-data-analysis/blob/master/images/aa-aaa-beta.png"/>
 
-### Conclusion
+## Conclusion
 
-### Future Work
+## Future Work
