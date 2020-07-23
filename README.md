@@ -16,15 +16,15 @@ The data analyzed is from the 1257 orders since going live on Amazon in January,
 
 - Clean product purchase date data and convert to two columns - one for time of day and one for standard date. The left visualization represents the frequency of purchase during each hour of the day, where the stated hour "9 AM" contains orders placed between 9:00 and 9:59:59. The right visualization is frequency of orders by date over time:
 
-<div align='center'>
-    <img src="https://github.com/ryankirkland/customer-data-analysis/blob/master/images/Screen%20Shot%202020-07-23%20at%202.56.37%20PM.png" width=45% />
-    <img src="https://github.com/ryankirkland/customer-data-analysis/blob/master/images/orders-over-time.png" width=45% />
+<div align="center">
+    <img src="https://github.com/ryankirkland/customer-data-analysis/blob/master/images/Screen%20Shot%202020-07-23%20at%202.56.37%20PM.png" width=49% />
+    <img src="https://github.com/ryankirkland/customer-data-analysis/blob/master/images/orders-over-time.png" width=49% />
 </div>
 
 - In another exercise, I chose to clean the order ship address data to allow for grouping by state to create a visualization of the regions that have placed the most orders YTD:
 
-<div align='center'>
-   <img src="https://github.com/ryankirkland/customer-data-analysis/blob/master/images/orders-by-state.png" width=75% />
+<div align="center">
+   <img src="https://github.com/ryankirkland/customer-data-analysis/blob/master/images/orders-by-state.png" width=70%>
 </div>
 
 The following charts break out the return reasons across all return and replacement request, then a visualization of the total shipped product that was marked as defective by customers compared to those that shipped in expected working condition, but may have been returned for reasons outside of defect:
@@ -65,6 +65,10 @@ I want to build a probability distribution for the value of p, which is the prop
     <img src="https://github.com/ryankirkland/customer-data-analysis/blob/master/images/aa-aaa-beta.png"/>
 </div>
             
-## Conclusion
+## Results
+
+- The results of the hypothesis test lead me to conclude, based on the current data, the defect rate at the total product level and individual product level does not warrant an investigation into manufacturing practices, as I was unable to reject my null hypothesis in the Frequentist approach to testing whether or not the defect rate for the batteries would land at or below 5% in future shipments. The Bayesian approach also showed an almost 0 probability of a 5% or greater defect rate.
 
 ## Future Work
+
+-  I would like to build on this to leverage Bayesian Decision Making taking in defect rates, demand levels, wholesale price, retail sales prices, and costs associated to selling to determine the most profitable choice in manufacturer through modeling future months of performance.
