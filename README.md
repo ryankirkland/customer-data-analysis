@@ -14,7 +14,7 @@ The data analyzed is from the 1257 orders since going live on Amazon in January,
 
 ## EDA
 
-<div>
+<div text-align='center'>
     <img src="https://github.com/ryankirkland/customer-data-analysis/blob/master/images/defect-vs-quality.png" width=45% />
     <img src="https://github.com/ryankirkland/customer-data-analysis/blob/master/images/return-reason.png" width=45% />
 </div>
