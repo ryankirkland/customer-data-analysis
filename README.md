@@ -20,7 +20,11 @@ The data analyzed is from the 1257 orders since going live on Amazon in January,
 
 - This second visualization shows number of orders placed by day:
 
-<img src="https://github.com/ryankirkland/customer-data-analysis/blob/master/images/state-heatmap.png" width=100% />
+<img src="https://github.com/ryankirkland/customer-data-analysis/blob/master/images/orders-over-time.png" width=100% />
+
+- In another exercise, I chose to clean the order ship address data to allow for grouping by state to create a visualization of the regions that have placed the most orders YTD:
+
+<img src="https://github.com/ryankirkland/customer-data-analysis/blob/master/images/orders-by-state.png" width=100% />
 
 The following charts break out the return reasons across all return and replacement request, then a visualization of the total shipped product that was marked as defective by customers compared to those that shipped in expected working condition, but may have been returned for reasons outside of defect:
 
