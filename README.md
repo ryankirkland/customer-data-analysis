@@ -15,8 +15,8 @@ The data analyzed is from the 1257 orders since going live on Amazon in January,
 ## EDA
 
 <div>
-    <img src="https://github.com/ryankirkland/customer-data-analysis/blob/master/images/defect-vs-quality.png" width=50% />
-    <img src="https://github.com/ryankirkland/customer-data-analysis/blob/master/images/return-reason.png" width=50% />
+    <img src="https://github.com/ryankirkland/customer-data-analysis/blob/master/images/defect-vs-quality.png" width=33% />
+    <img src="https://github.com/ryankirkland/customer-data-analysis/blob/master/images/return-reason.png" width=33% />
 </div>
 
 ## Hypothesis Testing: Frequentist Approach
