@@ -10,7 +10,7 @@ Pandas, Numpy, SciPy, Matplotlib, Plotly, Seaborn,
 
 ## The Data
 
-The data analyzed is from the 1257 orders since going live on Amazon in January, in addition to exports from Seller Central detailing returns and requests for replacement.
+The data analyzed is from the 1257 orders and 1371 units shipped since going live on Amazon in January, in addition to exports from Seller Central detailing returns and requests for replacement.
 
 ## EDA
 
