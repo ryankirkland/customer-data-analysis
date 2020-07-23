@@ -19,6 +19,11 @@ The data analyzed is from the 1257 orders since going live on Amazon in January,
     <img src="https://github.com/ryankirkland/customer-data-analysis/blob/master/images/return-reason.png" width=45% />
 </div>
 
+<div align='center'>
+    <img src="https://github.com/ryankirkland/customer-data-analysis/blob/master/images/defect-vs-quality.png" width=45% />
+    <img src="https://github.com/ryankirkland/customer-data-analysis/blob/master/images/return-reason.png" width=45% />
+</div>
+
 ## Hypothesis Testing: Frequentist Approach
 
 #### One-Tailed Hypothesis Test to Determine with 95% Confidence Battery Company Does Not Need to Investigate Manufacturer
@@ -28,7 +33,9 @@ The data analyzed is from the 1257 orders since going live on Amazon in January,
  
  - The null hypthesis in this test would be that the defective rate for these batteries will fall at or below 5% as future orders come through based on the current sample of orders and customer returns/defects.
  
- <img src="https://github.com/ryankirkland/customer-data-analysis/blob/master/images/binomial.png"/>
+<div align='center'>
+    <img src="https://github.com/ryankirkland/customer-data-analysis/blob/master/images/binomial.png"/>
+</div>
 
 ## Hypothesis Test: Bayesian Approach
 
@@ -36,14 +43,18 @@ The data analyzed is from the 1257 orders since going live on Amazon in January,
 
 I want to build a probability distribution for the value of p, which is the proportion of units that will turn out to be defective in future shipments. We will define success as locating a defective and failure as no defects found.
 
-<img src="https://github.com/ryankirkland/customer-data-analysis/blob/master/images/total-beta.png"/>
+<div align='center'>
+    <img src="https://github.com/ryankirkland/customer-data-analysis/blob/master/images/total-beta.png"/>
+</div>
 
 #### Beta Distributions of Defect Rates by Product
 
 - Even though analysis at the product level yielded a close to 0 probability of defect rates rising over 5% based on current data, there is still a possibility that the defect rate at the individual product level is >5%, and a single product is responsible dragging up the overall defect rate.
 
-<img src="https://github.com/ryankirkland/customer-data-analysis/blob/master/images/aa-aaa-beta.png"/>
-
+<div align='center'>
+    <img src="https://github.com/ryankirkland/customer-data-analysis/blob/master/images/aa-aaa-beta.png"/>
+</div>
+            
 ## Conclusion
 
 ## Future Work
