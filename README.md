@@ -14,17 +14,18 @@ The data analyzed is from the 1257 orders since going live on Amazon in January,
 
 ## EDA
 
-- Clean product purchase date data and convert to two columns - one for time of day and one for standard date. The first visualization represents the frequency of purchase during each hour of the day, where the stated hour "9 AM" contains orders placed between 9:00 and 9:59:59:
+- Clean product purchase date data and convert to two columns - one for time of day and one for standard date. The left visualization represents the frequency of purchase during each hour of the day, where the stated hour "9 AM" contains orders placed between 9:00 and 9:59:59. The right visualization is frequency of orders by date over time:
 
-<img src="https://github.com/ryankirkland/customer-data-analysis/blob/master/images/Screen%20Shot%202020-07-23%20at%202.56.37%20PM.png" width=75% align='center' />
-
-- This second visualization shows number of orders placed by day:
-
-<img src="https://github.com/ryankirkland/customer-data-analysis/blob/master/images/orders-over-time.png" width=75% align='center'/>
+<div align='center'>
+    <img src="https://github.com/ryankirkland/customer-data-analysis/blob/master/images/Screen%20Shot%202020-07-23%20at%202.56.37%20PM.png" width=45% />
+    <img src="https://github.com/ryankirkland/customer-data-analysis/blob/master/images/orders-over-time.png" width=45% />
+</div>
 
 - In another exercise, I chose to clean the order ship address data to allow for grouping by state to create a visualization of the regions that have placed the most orders YTD:
 
-<img src="https://github.com/ryankirkland/customer-data-analysis/blob/master/images/orders-by-state.png" width=100% />
+<div align='center'>
+   <img src="https://github.com/ryankirkland/customer-data-analysis/blob/master/images/orders-by-state.png" width=75% />
+</div>
 
 The following charts break out the return reasons across all return and replacement request, then a visualization of the total shipped product that was marked as defective by customers compared to those that shipped in expected working condition, but may have been returned for reasons outside of defect:
 
