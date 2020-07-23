@@ -27,7 +27,19 @@ The data analyzed is from the 1257 orders since going live on Amazon in January,
  
  <img src="https://github.com/ryankirkland/customer-data-analysis/blob/master/images/binomial.png"/>
 
-#### Bayesian Approach
+### Hypothesis Test: Bayesian Approach
+
+#### Beta Distribution for determining the probability that 5% or more units will be defective in future shipments
+
+I want to build a probability distribution for the value of p, which is the proportion of units that will turn out to be defective in future shipments. We will define success as locating a defective and failure as no defects found.
+
+<img src="https://github.com/ryankirkland/customer-data-analysis/blob/master/images/total-beta.png"/>
+
+#### Beta Distributions of Defect Rates by Product
+
+- Even though analysis at the product level yielded a close to 0 probability of defect rates rising over 5% based on current data, there is still a possibility that the defect rate at the individual product level is >5%, and a single product is responsible dragging up the overall defect rate.
+
+<img src="https://github.com/ryankirkland/customer-data-analysis/blob/master/images/aa-aaa-beta.png"/>
 
 ### Conclusion
 
