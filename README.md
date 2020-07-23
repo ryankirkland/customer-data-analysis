@@ -77,7 +77,7 @@ I want to build a probability distribution for the value of p, which is the prop
 ##### Credible Interval
 
 - 95% Credible Interval of AA Defect Rates: (0.57%, 2.6%)
-- 95% Credible Interval of AA Defect Rates: (1.22%, 3.27%)
+- 95% Credible Interval of AAA Defect Rates: (1.22%, 3.27%)
             
 ## Results
 
