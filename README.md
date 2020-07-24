@@ -2,7 +2,7 @@
 
 ## Overview
 
-The following is an investigation into customer order data from a recently launched rechargeable battery brand's Amazon Seller Central account. In addition to EDA to uncover trends in purchase behavior, the goal of this analysis is determine whether or not the current rate of products being returned as defective warrants an investigation into the current manufacturer.
+The following is an investigation into customer order data from a recently launched rechargeable battery brand's Amazon Seller Central account. In addition to EDA to uncover trends in purchase behavior, the goal of this analysis is to determine whether or not the current rate of products being returned as defective warrants an investigation into the current manufacturer.
 
 ### Technologies Used
 
@@ -61,9 +61,9 @@ p_value = 1 - normal_approx.cdf(1371 * prob_alt)
     <img src="https://github.com/ryankirkland/customer-data-analysis/blob/master/images/binomial.png"/>
 </div>
 
-##### Confidence Interval
+##### Results:
 
-We can be 95% confident that the mean defect rate of a sample of all products will fall between 1.01% and 2.33%.
+With a p-value of 0.999 and alpha of 0.05, I cannot reject the null hypothesis that the defect rate will be less than or equal to 5%. These results indicate there is no need to investigate our manufacturer.
 
 ## Hypothesis Test: Bayesian Approach
 
