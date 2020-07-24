@@ -6,7 +6,7 @@ The following is an investigation into customer order data from a recently launc
 
 ### Technologies Used
 
-Pandas, Numpy, SciPy, Matplotlib, Plotly, Seaborn, 
+Pandas, Numpy, SciPy, Matplotlib, Plotly
 
 ## The Data
 
@@ -86,7 +86,7 @@ upper_bound = beta_dist_a.ppf(0.975)
 ```
 
 <div align='center'>
-    <img src="https://github.com/ryankirkland/customer-data-analysis/blob/master/images/total-beta.png"/>
+    <img src="https://github.com/ryankirkland/customer-data-analysis/blob/master/images/beta-dist-total.png"/>
 </div>
 
 #### Beta Distributions of Defect Rates by Product
@@ -117,7 +117,7 @@ aaa_samples = aaa_beta.rvs(10**6)
 ```
 
 <div align='center'>
-    <img src="https://github.com/ryankirkland/customer-data-analysis/blob/master/images/aa-aaa-beta.png"/>
+    <img src="https://github.com/ryankirkland/customer-data-analysis/blob/master/images/credible_interval.png"/>
 </div>
 
 - Probability of 5% or greater defect rate for AA: 0.0
@@ -133,6 +133,10 @@ aaa_samples = aaa_beta.rvs(10**6)
 ## Results
 
 - The results of the hypothesis test lead me to conclude, based on the current data, the defect rate at the total product level and individual product level does not warrant an investigation into manufacturing practices, as I was unable to reject my null hypothesis in the Frequentist approach to testing whether or not the defect rate for the batteries would land at or below 5% in future shipments. The Bayesian approach also showed an almost 0 probability of a 5% or greater defect rate.
+
+##### Assuming 10,000 unit order to satisfy demand:
+- Potential Retail Sales Lost from Defective AA: ($1,700.29, $7,808.9)
+- Potential Retail Sales Lost from Defective AAA: ($3,051.07, $8,168.25)
 
 ## Future Work
 
