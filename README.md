@@ -17,7 +17,7 @@ The data analyzed is from the 1257 orders and 1371 units shipped since going liv
 - Clean product purchase date data and convert to two columns - one for time of day and one for standard date. The left visualization represents the frequency of purchase during each hour of the day, where the stated hour "9 AM" contains orders placed between 9:00 and 9:59:59. The right visualization is frequency of orders by date over time:
 
 <div align="center">
-    <img src="https://github.com/ryankirkland/customer-data-analysis/blob/master/images/Screen%20Shot%202020-07-23%20at%202.56.37%20PM.png" />
+    <img src="https://github.com/ryankirkland/customer-data-analysis/blob/master/images/Screen%20Shot%202020-07-23%20at%202.56.37%20PM.png" width=75%/>
 </div>
 <div align="center">
     <img src="https://github.com/ryankirkland/customer-data-analysis/blob/master/images/orders-over-time.png" />
