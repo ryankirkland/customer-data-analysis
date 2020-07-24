@@ -2,7 +2,7 @@
 
 ## Overview
 
-The following is an investigation into customer order data from a recently launched rechargeable battery brand's Amazon Seller Central account. In addition to EDA to uncover trends in purchase behavior, the goal of this analysis is to determine whether or not the current rate of products being returned as defective warrants an investigation into the current manufacturer.
+The following is an investigation into customer order data from a recently launched rechargeable battery brand's Amazon Seller Central account. In addition to EDA to uncover trends in purchase behavior, <b>the goal of this analysis is to determine whether or not the current rate of products being returned as defective warrants an investigation into the current manufacturer.</b>
 
 ### Technologies Used
 
