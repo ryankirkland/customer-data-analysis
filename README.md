@@ -36,6 +36,8 @@ The following charts break out the return reasons across all return and replacem
     <img src="https://github.com/ryankirkland/customer-data-analysis/blob/master/images/return-reasons.png" width=45% />
 </div>
 
+- <b>Assumption Made:</b> Erring on the side of being more critical of the inventory quality, I chose to keep the instances of duplicate return/replacements that call out a defective return reason.
+
 ## Hypothesis Testing: Frequentist Approach
 
 #### One-Tailed Hypothesis Test to Determine with 95% Confidence Battery Company Does Not Need to Investigate Manufacturer
