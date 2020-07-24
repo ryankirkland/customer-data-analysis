@@ -29,7 +29,7 @@ The data analyzed is from the 1257 orders and 1371 units shipped since going liv
    <img src="https://github.com/ryankirkland/customer-data-analysis/blob/master/images/orders-by-state.png" width=70%>
 </div>
 
-The following charts break out the return reasons across all return and replacement request, then a visualization of the total shipped product that was marked as defective by customers compared to those that shipped in expected working condition, but may have been returned for reasons outside of defect:
+The following charts break out the return reasons across all return and replacement requests, then a visualization of the total shipped product that was marked as defective by customers compared to those that shipped in expected working condition, but may have been returned for reasons outside of defect:
 
 <div align='center'>
     <img src="https://github.com/ryankirkland/customer-data-analysis/blob/master/images/defect-vs-quality.png" width=45% />
