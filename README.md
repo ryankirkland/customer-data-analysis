@@ -43,7 +43,7 @@ The following charts break out the return reasons across all return and replacem
  - In the early stages, the battery company's tolerance for defect is higher as they work out kinks with the manufacturer and battery design. They are consistently researching defective product to fix known issues, but in the early stages are willing to manage defects up to 5%, at which stage they would request a formal investigation into the manufacturer to determine whether or not the root cause of defect is a result of manufacturing practices as opposed to a design flaw.
  
  
- - The null hypthesis in this test would be that the defective rate for these batteries will fall at or below 5% as future orders come through based on the current sample of orders and customer returns/defects.
+ - <b>The null hypthesis</b> in this test would be the defective rate for these batteries will be less than or equal to 5%.
  
 ```
 alpha = 0.05
@@ -90,6 +90,11 @@ upper_bound = beta_dist_a.ppf(0.975)
 <div align='center'>
     <img src="https://github.com/ryankirkland/customer-data-analysis/blob/master/images/beta-dist-total.png"/>
 </div>
+
+##### Results:
+
+- Probability of 5% of inventory being defective: ~ 0.0
+- 95% probability that the defect rate of all products will fall between 1.01% and 2.33%.
 
 #### Beta Distributions of Defect Rates by Product
 
