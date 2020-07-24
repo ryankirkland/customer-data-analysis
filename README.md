@@ -43,6 +43,20 @@ The following charts break out the return reasons across all return and replacem
  
  - The null hypthesis in this test would be that the defective rate for these batteries will fall at or below 5% as future orders come through based on the current sample of orders and customer returns/defects.
  
+```
+alpha = 0.05
+n = sum(order_status_counts['quantity-shipped'])
+prob_null = 0.05
+prob_alt = (order_status_counts.iloc[0,1]/n)
+
+binomial_dist = stats.binom(n, prob_null)
+binom_mean = n * prob_null
+binom_var = n * prob_null * (1-prob_null)
+normal_approx = stats.norm(binom_mean, np.sqrt(binom_var))
+
+p_value = 1 - normal_approx.cdf(1371 * prob_alt)
+```
+ 
 <div align='center'>
     <img src="https://github.com/ryankirkland/customer-data-analysis/blob/master/images/binomial.png"/>
 </div>
@@ -53,9 +67,23 @@ We can be 95% confident that the mean defect rate of a sample of all products wi
 
 ## Hypothesis Test: Bayesian Approach
 
-#### Beta Distribution for determining the probability that 5% or more units will be defective in future shipments
+#### Beta Distribution for determining the probability that 5% or more units will be defective
 
-I want to build a probability distribution for the value of p, which is the proportion of units that will turn out to be defective in future shipments. We will define success as locating a defective and failure as no defects found.
+Here, I want to build a probability distribution for the value of p, which is the proportion of units that will turn out to be defective in future shipments. We will define success as locating a defective and failure as no defects found.
+
+```
+probs = np.linspace(0,1,10000)
+
+defects_a = 21
+quality_a = 1350
+
+beta_dist_a = stats.beta(defects_a+1, quality_a+1)
+
+beta_dist_a.rvs(10**6) > 0.05
+
+lower_bound = beta_dist_a.ppf(0.025)
+upper_bound = beta_dist_a.ppf(0.975)
+```
 
 <div align='center'>
     <img src="https://github.com/ryankirkland/customer-data-analysis/blob/master/images/total-beta.png"/>
@@ -64,6 +92,29 @@ I want to build a probability distribution for the value of p, which is the prop
 #### Beta Distributions of Defect Rates by Product
 
 - Even though analysis at the product level yielded a close to 0 probability of defect rates rising over 5% based on current data, there is still a possibility that the defect rate at the individual product level is >5%, and a single product is responsible dragging up the overall defect rate.
+
+```
+aa_total = order_status_count_by_product.iloc[1,1]
+aaa_total = order_status_count_by_product.iloc[2,1]
+
+aa_defects_count = order_status_count_by_product.iloc[1,3]
+aa_quality = aa_total - aa_defects_count
+aaa_defects_count = order_status_count_by_product.iloc[2,3]
+aaa_quality = aaa_total - aaa_defects_count
+
+probs = np.linspace(0,1,10000)
+
+aa_beta = stats.beta(aa_defects_count+1, aa_quality+1)
+aaa_beta = stats.beta(aaa_defects_count+1, aaa_quality+1)
+
+aa_lower_bound = aa_beta.ppf(0.025)
+aa_upper_bound = aa_beta.ppf(0.975)
+aaa_lower_bound = aaa_beta.ppf(0.025)
+aaa_upper_bound = aaa_beta.ppf(0.975)
+
+aa_samples = aa_beta.rvs(10**6)
+aaa_samples = aaa_beta.rvs(10**6)
+```
 
 <div align='center'>
     <img src="https://github.com/ryankirkland/customer-data-analysis/blob/master/images/aa-aaa-beta.png"/>
