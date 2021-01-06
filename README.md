@@ -20,7 +20,7 @@ The following charts break out the return reasons across all return and replacem
     <img src="https://github.com/ryankirkland/customer-data-analysis/blob/master/images/defect-vs-quality.png" width=45% />
     <img src="https://github.com/ryankirkland/customer-data-analysis/blob/master/images/return-reasons.png" width=45% />
 </div>
-
+<br>
 - <b>Assumption Made:</b> Erring on the side of being more critical of the inventory quality, I chose to keep the instances of duplicate return/replacements that call out a defective return reason.
 
 ## Hypothesis Testing: Frequentist Approach
